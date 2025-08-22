@@ -18,7 +18,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUpload }) => {
       name: 'Haiti Earthquake - Pre Disaster',
       date: '2023-08-15',
       location: 'Port-au-Prince, Haiti',
-      url: 'https://images.pexels.com/photos/87611/earth-blue-planet-globe-planet-87611.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://i.imgur.com/4dJI9hD.jpeg',
       type: 'pre'
     },
     {
