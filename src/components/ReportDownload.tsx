@@ -25,7 +25,7 @@ const ReportDownload: React.FC = () => {
 const handleGenerateReport = () => {
   alert(translate('downloadStarted'));
   const link = document.createElement('a');
-  link.href = "/public/Report.pdf";
+  link.href = "/Report.pdf";
   link.download = 'Hurricane_Florence_Report.pdf';
   link.click();
 };
