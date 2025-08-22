@@ -22,17 +22,14 @@ const ReportDownload: React.FC = () => {
     );
   };
 
-  const handleGenerateReport = () => {
-  const googleDocUrl = "https://docs.google.com/document/d/1sa0D42Vb2jSfEI6L2dvvq0194WYweS-o-21L6DbtxDo/view?usp=sharing";
-  const exportUrl = googleDocUrl.replace("/view?usp=sharing", "/export?format=pdf");
-
-  alert(translate('downloadStarted')); // optional alert
-
+const handleGenerateReport = () => {
+  alert(translate('downloadStarted'));
   const link = document.createElement('a');
-  link.href = exportUrl;
+  link.href = "https://ai-powered-disaster-response.vercel.app/report.pdf";
   link.download = 'Hurricane_Florence_Report.pdf';
   link.click();
 };
+
 
 
 
