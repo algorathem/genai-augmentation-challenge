@@ -26,7 +26,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUpload }) => {
       name: 'Haiti Earthquake - Post Disaster',
       date: '2023-08-20',
       location: 'Port-au-Prince, Haiti',
-      url: 'https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://imgur.com/cdYxGGU',
       type: 'post'
     }
   ];
