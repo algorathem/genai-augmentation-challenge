@@ -23,13 +23,39 @@ const ReportDownload: React.FC = () => {
   };
 
   const handleGenerateReport = () => {
-    setIsGenerating(true);
-    setTimeout(() => {
-      setIsGenerating(false);
-      // Simulate download
-      alert(translate('downloadStarted'));
-    }, 2000);
-  };
+  if (selectedFormats.length === 0) return;
+
+  setIsGenerating(true);
+
+  setTimeout(() => {
+    setIsGenerating(false);
+
+    // Show download started alert
+    alert(translate('downloadStarted'));
+
+    // Example: create a text-based report
+    const reportContent = `
+Hurricane Florence Humanitarian Prioritization Report
+
+The system prioritizes affected areas based on structural damage scores...
+(Include your full report text here)
+`;
+
+    // Generate a Blob for download
+    const blob = new Blob([reportContent], { type: 'text/plain' });
+
+    // Trigger browser download
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'Hurricane_Florence_Report.txt';
+    link.click();
+
+    // Cleanup
+    URL.revokeObjectURL(link.href);
+
+  }, 2000);
+};
+
 
   const getTotalSize = () => {
     return reportFormats
