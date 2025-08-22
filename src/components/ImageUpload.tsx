@@ -96,11 +96,15 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUpload }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {mockImages.map((image) => (
             <div key={image.id} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-              <img 
-                src={image.url} 
-                alt={image.name}
-                className="w-12 h-12 object-cover rounded"
-              />
+              {image.url ? (
+                <img 
+                  src={image.url} 
+                  alt={image.name}
+                  className="w-12 h-12 object-cover rounded"
+                />
+              ) : (
+                <span className="text-red-500">Image URL missing: {image.name}</span>
+              )}
               <div className="flex-1 min-w-0">
                 <h5 className="font-medium text-sm text-gray-900 truncate">{image.name}</h5>
                 <div className="flex items-center space-x-2 text-xs text-gray-500">
