@@ -25,7 +25,7 @@ const ReportDownload: React.FC = () => {
 const handleGenerateReport = () => {
   alert(translate('downloadStarted'));
   const link = document.createElement('a');
-  link.href = "https://ai-powered-disaster-response.vercel.app/report.pdf";
+  link.href = "/public/Report.pdf";
   link.download = 'Hurricane_Florence_Report.pdf';
   link.click();
 };
