@@ -15,17 +15,17 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUpload }) => {
   const mockImages = [
     {
       id: '1',
-      name: 'Haiti Earthquake - Pre Disaster',
-      date: '2023-08-15',
-      location: 'Port-au-Prince, Haiti',
+      name: 'Hurricane Florence - Pre Disaster',
+      date: '2018-09-13',
+      location: 'Wilmington, North Carolina, USA',
       url: 'https://i.imgur.com/4dJI9hD.jpeg',
       type: 'pre'
     },
     {
       id: '2', 
-      name: 'Haiti Earthquake - Post Disaster',
-      date: '2023-08-20',
-      location: 'Port-au-Prince, Haiti',
+      name: 'Hurricane Florence - Post Disaster',
+      date: '2018-09-17',
+      location: 'Wilmington, North Carolina, USA',
       url: 'https://i.imgur.com/cdYxGGU.png',
       type: 'post'
     }
@@ -48,7 +48,6 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUpload }) => {
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     setDragOver(false);
-    // Handle file drop logic here
     handleSelectMockData();
   };
 
