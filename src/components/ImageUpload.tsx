@@ -26,7 +26,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onUpload }) => {
       name: 'Hurricane Florence - Post Disaster',
       date: '2018-09-17',
       location: 'Wilmington, North Carolina, USA',
-      url: 'https://i.imgur.com/cdYxGGU.png',
+      url: 'https://i.imgur.com/zNruRcD.jpeg',
       type: 'post'
     }
   ];
