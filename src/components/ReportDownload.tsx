@@ -23,8 +23,8 @@ const ReportDownload: React.FC = () => {
   };
 
   const handleGenerateReport = () => {
-  const googleDocUrl = "https://docs.google.com/document/d/1sa0D42Vb2jSfEI6L2dvvq0194WYweS-o-21L6DbtxDo/edit?usp=sharing";
-  const exportUrl = googleDocUrl.replace("/edit", "/export?format=pdf");
+  const googleDocUrl = "https://docs.google.com/document/d/1sa0D42Vb2jSfEI6L2dvvq0194WYweS-o-21L6DbtxDo/view?usp=sharing";
+  const exportUrl = googleDocUrl.replace("/view?usp=sharing", "/export?format=pdf");
 
   alert(translate('downloadStarted')); // optional alert
 
