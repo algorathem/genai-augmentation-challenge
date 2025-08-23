@@ -16,7 +16,7 @@ const Header: React.FC = () => {
             <img 
               src="/logo.png" 
               alt="GeoGuardians.AI Logo" 
-              className="h-24 w-auto" 
+              className="h-25 w-auto" 
             />
           </div>
 
