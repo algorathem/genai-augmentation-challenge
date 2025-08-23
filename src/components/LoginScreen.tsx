@@ -90,9 +90,9 @@ const LoginScreen: React.FC = () => {
         {/* Left Side - Branding & Info */}
         <div className="flex items-center justify-center lg:justify-start">
           <img
-            src="/your-logo.png"
+            src="/logo.png"
             alt="SKAI Response Logo"
-            className="h-16 w-auto"
+            className="h-30 w-auto"
           />
         </div>
 
