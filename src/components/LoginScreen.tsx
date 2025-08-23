@@ -92,13 +92,13 @@ const LoginScreen: React.FC = () => {
           <img
             src="/logo.png"
             alt="SKAI Response Logo"
-            className="h-30 w-auto"
+            className="h-25 w-auto"
           />
         </div>
 
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold text-gray-900">
-            Humanitarian Operations Dashboard
+            Humanitarian Operations Dashboard Rest
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
             Advanced AI-powered platform integrating satellite imagery analysis,
