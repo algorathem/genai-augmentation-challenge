@@ -92,7 +92,7 @@ const LoginScreen: React.FC = () => {
           <img
             src="/logo.png"
             alt="SKAI Response Logo"
-            className="h-28 w-auto"
+            className="h-30 w-auto"
           />
         </div>
 
